@@ -1,0 +1,115 @@
+.main{
+
+}
+
+.summary-bar{
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: start;
+  text-align: center;
+  font-size: 1vw;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.summary-info{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 0;
+}
+
+.summary-number{
+  height: 5vw;
+  width: 5vw;
+  background-color: #616060;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+.profile-details{
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  column-gap: 10px;
+}
+
+.registration-approval, .tutor-list{
+  border-radius: 8px;
+  background-color: white;
+}
+
+.tutor-count-details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.tutor-count-header, .approval-header{
+  margin: 10px;
+}
+
+.tutor-count{
+  display: flex;
+  width: 95%;
+  height: 55px;
+  background-color: #D9D9D9;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content:space-between;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.approval-details{
+  display: flex;
+  width: 97%;
+  height: 55px;
+  background-color: #D9D9D9;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content:space-between;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.count-number{
+  background-color: #616060;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 8px;
+  font-weight: 700;
+  color: white;
+}
+
+.fa-user{
+  margin: 0 10px 0 14px;
+}
+
+.fa-square-check, .fa-square-xmark{
+  font-size: 26px;
+  margin-left: 10px;
+}
+
+.approval-people{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.view-details{
+  height: 25px;
+  border: none;
+  background-color: white;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.approval-right{
+  display: flex;
+  margin-right: 15px;
+}
