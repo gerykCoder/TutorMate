@@ -1,17 +1,19 @@
 .main{
-
+  
 }
 
-.summary-bar{
+/******** SUMMARY BAR ********/
+
+.upper-main{
   background-color: white;
   display: flex;
-  flex-direction: row;
   justify-content:space-between;
   align-items: start;
   text-align: center;
-  font-size: 1vw;
+  height: 15vh;
   margin-bottom: 10px;
   border-radius: 8px;
+  padding: 10px 0;
 }
 
 .summary-info{
@@ -20,54 +22,67 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 8px 0;
 }
 
 .summary-number{
   height: 5vw;
-  width: 5vw;
+  width: 7vw;
   background-color: #616060;
   margin: 10px 0;
   border-radius: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 3vw;
+  font-weight: 700;
+  color: white;
 }
 
-.profile-details{
+/******** PROFILE DETAILS ********/
+
+.lower-main{
   display: grid;
   grid-template-columns: 2fr 3fr;
   column-gap: 10px;
 }
 
-.registration-approval, .tutor-list{
+.left-section, .right-section{
   border-radius: 8px;
+  background-color: white;
+
+  height: 73vh;
+  margin-bottom: 10px;
+  min-width: 100%;
+
+  position: relative;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.right-section-header, .left-section-header{
+  position: sticky;
+  z-index: 200;
+  padding: 10px 15px;
+  top: 0;
   background-color: white;
 }
 
-.tutor-count-details{
+.left-section-content, .right-section-content{
+  position: absolute;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-
 }
 
-.tutor-count-header, .approval-header{
-  margin: 10px;
-}
+/******** Left Side ********/
 
 .tutor-count{
   display: flex;
   width: 95%;
-  height: 55px;
-  background-color: #D9D9D9;
-  align-items: center;
-  margin-bottom: 10px;
-  justify-content:space-between;
-  align-items: center;
-  border-radius: 8px;
-}
-
-.approval-details{
-  display: flex;
-  width: 97%;
   height: 55px;
   background-color: #D9D9D9;
   align-items: center;
@@ -86,19 +101,27 @@
   color: white;
 }
 
-.fa-user{
+.main .fa-user{
   margin: 0 10px 0 14px;
 }
 
-.fa-square-check, .fa-square-xmark{
-  font-size: 26px;
-  margin-left: 10px;
+/******** Right Side ********/
+
+.for-approval{
+  display: flex;
+  width: 97%;
+  height: 55px;
+  background-color: #D9D9D9;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content:space-between;
+  align-items: center;
+  border-radius: 8px;
 }
 
-.approval-people{
+.for-approval-right{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-right: 15px;
 }
 
 .view-details{
@@ -109,7 +132,8 @@
   border-radius: 5px;
 }
 
-.approval-right{
-  display: flex;
-  margin-right: 15px;
+.fa-square-check, .fa-square-xmark{
+  font-size: 26px;
+  margin-left: 10px;
 }
+
