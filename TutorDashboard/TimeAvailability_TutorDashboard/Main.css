@@ -1,0 +1,6 @@
+.main{
+  width: calc(100vw - 245px) ;
+  height: calc(100vh - 80px);
+  column-gap: 15px;
+  background-color: black;
+}
