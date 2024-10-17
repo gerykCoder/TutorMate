@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Tutee Dashboard - TutorMate</title>
+
+  <link rel="icon" type="image" href="/Pictures/logo.png">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="Header.css">
+  <link rel="stylesheet" href="SideBar.css">
+  <link rel="stylesheet" href="Main.css">
+  <link rel="stylesheet" href="General.css">
+
+</head>
+<body>
+  <header class="header">
+    <div class="header-left-section">
+      <i class="fa-solid fa-bell"></i>
+      <i class="fa-solid fa-user"></i>
+      Tutee
+    </div>
+  </header>
+
+  <nav class="sidebar">
+    <div class="sidebar-upper">
+      <div class="roleDashboard">
+        <div class="dashboard">DASHBOARD</div>
+        <div class="tutor">TUTEE</div>
+      </div>
+      <div class="sidebar-link">
+        <div>HOME</div>
+      </div>
+      <div class="sidebar-link">
+        <div>REGISTRATION</div>
+      </div>
+      <div class="sidebar-link">
+        <div>LIST OF TUTORS</div>
+      </div>
+    </div>
+    <div class="sidebar-lower">
+      <div>Logout</div>
+    </div>
+  </nav>
+
+  <main class="main">
+    <div class="left-side">
+      <div class="left-side-header">
+        Tutorial Registration
+      </div>
+      <div class="left-side-content">
+        <form action="">
+          <div>
+            <label for="NoOfTutees">Number of Tutees:</label>
+            <input type="text" id="NoOfTutees"> <br>
+          </div>
+
+          <div>
+            <label for="course">Course of Tutorial:</label>
+            <select name="course" id="course">
+              <option value="" disabled selected>Please Select</option>
+              <option value="calc1">Calculus 1</option>
+              <option value="calc2">Calculus 2</option>
+              <option value="MMW">Math in the Modern World</option>
+              <option value="DE">Differential Equations</option>
+              <option value="LA">Linear Algebra</option>
+            </select> <br>
+          </div>
+
+          <div class="topicTutorial">
+            <label for="topic">Topics for Tutorial:</label><br>
+            <textarea name="topic" id="topic"></textarea>
+          </div>
+
+          <div>
+            <label for="date">Preferred Date:</label>
+            <input type="date" name="date" id="date"><br>
+          </div>
+
+          <div>
+            <label for="timeStart">Time Start:</label>
+            <input type="time" name="timeStart" id="timeStart" step="1800"><br>  
+          </div>
+
+          <div>
+            <label for="timeEnd">Time End:</label>
+            <input type="time" name="timeEnd" id="timeEnd"><br>
+          </div>
+
+          <div>
+            <label for="tutor">Available Tutor:</label> 
+            <select name="tutor" id="tutor">
+              <option value="" disabled selected>Please Select</option>
+              <option value="jose">Jose Grayson Atun</option>
+              <option value="geryk">Geryk Kean Barrot</option>
+              <option value="justin">Justin Edwin Guiriba</option>
+              <option value="iuris">Iuris Alijahray Maceda</option>
+            </select>
+          </div> 
+        </form>
+      </div>
+      <div class="left-side-button">
+        <button>Register</button>
+      </div>
+    </div>
+
+    <div class="right-side">
+      <div class="right-side-upper">
+        <div class="right-side-upper-header">
+          Pending Tutorials
+        </div>
+        <div class="right-side-upper-content">
+          <div class="pending-tutorial">
+            <div class="pending-tutorial-left">
+              <i class="fa-solid fa-user"></i>
+              Jose Grayson Atun
+            </div>
+            <div class="pending-tutorial-right">
+              <button class="view-details"> 
+                View Details
+              </button>
+            </div>
+          </div>
+          <div class="pending-tutorial">
+            <div class="pending-tutorial-left">
+              <i class="fa-solid fa-user"></i>
+              Jose Grayson Atun
+            </div>
+            <div class="pending-tutorial-right">
+              <button class="view-details"> 
+                View Details
+              </button>
+            </div>
+          </div>
+          <div class="pending-tutorial">
+            <div class="pending-tutorial-left">
+              <i class="fa-solid fa-user"></i>
+              Jose Grayson Atun
+            </div>
+            <div class="pending-tutorial-right">
+              <button class="view-details"> 
+                View Details
+              </button>
+            </div>
+          </div>
+          <div class="pending-tutorial">
+            <div class="pending-tutorial-left">
+              <i class="fa-solid fa-user"></i>
+              Jose Grayson Atun
+            </div>
+            <div class="pending-tutorial-right">
+              <button class="view-details"> 
+                View Details
+              </button>
+            </div>
+          </div>
+          <div class="pending-tutorial">
+            <div class="pending-tutorial-left">
+              <i class="fa-solid fa-user"></i>
+              Jose Grayson Atun
+            </div>
+            <div class="pending-tutorial-right">
+              <button class="view-details"> 
+                View Details
+              </button>
+            </div>
+          </div>
+          <div class="pending-tutorial">
+            <div class="pending-tutorial-left">
+              <i class="fa-solid fa-user"></i>
+              Jose Grayson Atun
+            </div>
+            <div class="pending-tutorial-right">
+              <button class="view-details"> 
+                View Details
+              </button>
+            </div>
+          </div>
+          <div class="pending-tutorial">
+            <div class="pending-tutorial-left">
+              <i class="fa-solid fa-user"></i>
+              Jose Grayson Atun
+            </div>
+            <div class="pending-tutorial-right">
+              <button class="view-details"> 
+                View Details
+              </button>
+            </div>
+          </div>
+          <div class="pending-tutorial">
+            <div class="pending-tutorial-left">
+              <i class="fa-solid fa-user"></i>
+              Jose Grayson Atun
+            </div>
+            <div class="pending-tutorial-right">
+              <button class="view-details"> 
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-side-lower">
+        <div class="right-side-lower-header">
+          Scheduled Tutorial
+        </div>
+        <div class="right-side-lower-content">
+          <div class="scheduled-tutorial">
+            <div class="scheduled-tutorial-left">
+              <i class="fa-solid fa-user"></i>
+              Jose Grayson Atun
+            </div>
+            <div class="scheduled-tutorial-right">
+              <button class="view-details"> 
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

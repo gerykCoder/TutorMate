@@ -1,0 +1,141 @@
+.main{
+  width: calc(100vw - 245px) ;
+  height: calc(100vh - 80px); 
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+}
+
+.left-side{
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 .4rem .8rem gray;
+  position: relative;
+  overflow: auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.left-side-header{
+  flex: 0 1 auto;
+}
+
+.left-side-content{
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: end;
+  text-align: end;
+  margin: 0 25px;
+  border-radius: 15px;
+  padding: 25px;
+  background-color: #D9D9D9;
+}
+
+.left-side-content div{
+  margin-bottom: 3vh;
+}
+
+.left-side-content form .topicTutorial{
+  width: 100%;
+  text-align: start;
+}
+
+.left-side-content form .topicTutorial textarea{
+  width: 99%;
+  height: 14vh;
+}
+
+input{
+  width: 18vw;
+  font-size: 18px;
+}
+
+select{
+  width: 18vw;
+  font-size: 18px;
+}
+
+.left-side-button{
+  flex: 0 1 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin: 0 25px;
+}
+
+.right-side{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 10px;
+}
+
+.right-side-upper,
+.right-side-lower{
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 .4rem .8rem gray;
+  position: relative;
+  overflow: auto;
+}
+
+.left-side-header,
+.right-side-lower-header,
+.right-side-upper-header{
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: white;
+
+  position: sticky;
+  z-index: 200;
+  top: 0;
+}
+
+.right-side-upper-content,
+.right-side-lower-content{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pending-tutorial,
+.scheduled-tutorial{
+  display: flex;
+  width: 97%;
+  height: 55px;
+  background-color: #D9D9D9;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content:space-between;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.main .fa-user{
+  margin: 0 10px 0 14px;
+}
+
+.view-details{
+  height: 25px;
+  border: none;
+  background-color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
+.left-side-button button{
+  background-color: #616060;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: .5rem 1.5rem;
+  border-radius: 10px;
+}

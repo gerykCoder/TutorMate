@@ -2,6 +2,27 @@ main{
   height: calc(100vh-55px);
 }
 
+/***** Generate Report Button *****/
+
+.generate-report{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 2px 0 10px 0;
+  
+}
+
+.generate-report-button{
+  padding: 10px 20px;
+  font-size: 1vw;
+  border: none;
+  border-radius: 7px;
+  background-color: white;
+  box-shadow: 0 .2rem 1rem rgba(80, 80, 80, .5);
+}
+
+/***** Tutorial History Table *****/
+
 .tutorial-history{
   background-color: white;
   height: 85vh;
@@ -68,20 +89,3 @@ table tr td:nth-child(1){
   width: 70px;
 }
 
-
-.generate-report{
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  padding: 2px 0 1vh 0;
-  
-}
-
-.generate-report-button{
-  padding: 10px 20px;
-  font-size: 1vw;
-  border: none;
-  border-radius: 7px;
-  background-color: white;
-  box-shadow: 0 .2rem 1rem rgba(80, 80, 80, .5);
-}
